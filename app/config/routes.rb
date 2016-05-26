@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :studentsqlis
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
   root 'application#hello'
   resources :book
   get 'shit' => 'shit#show'
+  get 'shit/sqli' =>'shit#sqli'
 
 
   # Example resource route with options:
